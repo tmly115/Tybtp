@@ -29,6 +29,8 @@ int main(int argc, char *argv[]){
             } else {
                 std::cout << "Unpacks a .vfsf file and re-creates the directory and it's sub-directory's at the shell's current path." << std::endl;
             }
+        } else {
+            std::cout << "Command not recognised!\nSimply execute vfsf again with no arguments to see a list of correct commands." << std::endl;
         }
     } else {
         program_info();
