@@ -19,6 +19,9 @@ int main(int argc, char *argv[]){
     if(argc > 1){
         if(strcmp(argv[1], "pack") == 0){
             if(argc > 2){
+                if( argv[2][strlen(argv[2]) - 1] == '/'){
+                    argv[2][strlen(argv[2]) - 1] = '\0';
+                }
                 pack(argv[2]);
             } else {
                 std::cout << "Creates a .vfsf file from the directory specified." << std::endl;
